@@ -1,0 +1,86 @@
+body {
+    background-color: #F5F5F5; /* Cambiado a un color más claro */
+}
+
+.navbar {
+    background-color: #282c34; /* Cambiado a un tono oscuro */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; /* Aumentado el margen */
+}
+
+.cell {
+    width: 60px; /* Reducido el tamaño de la celda */
+    height: 60px; /* Reducido el tamaño de la celda */
+    background-color: #3498db; /* Cambiado a un tono azul */
+    border-radius: 10px; /* Añadido borde redondeado */
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.cell.empty {
+    background-color: #ecf0f1; /* Cambiado a un tono gris claro */
+}
+
+/* Colores de los jugadores */
+.cell.red {
+    background-color: #e74c3c; /* Cambiado a un tono rojo */
+}
+
+.cell.yellow {
+    background-color: #f1c40f; /* Cambiado a un tono amarillo */
+}
+
+h1 {
+    color: #2c3e50; /* Cambiado a un tono oscuro */
+    text-align: center;
+    font-size: 28px; /* Aumentado el tamaño del texto */
+    margin-bottom: 30px; /* Aumentado el margen inferior */
+}
+
+.nav-link {
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px; /* Aumentado el tamaño del texto */
+}
+
+#tablero {
+    flex-direction: row;
+    background-color: #34495e; /* Cambiado a un tono gris oscuro */
+    border-radius: 15px; /* Añadido un borde redondeado */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Aumentado el efecto de sombra */
+    padding: 20px; /* Aumentado el relleno */
+    margin: 20px;
+    display: flex;
+    justify-content: center; /* Centrado el tablero horizontalmente */
+}
+
+#div_tablero {
+    margin-top: 30px; /* Aumentado el margen superior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#reiniciar-button {
+    margin-top: 30px; /* Aumentado el margen superior */
+    padding: 15px 20px; /* Aumentado el tamaño del botón */
+    font-size: 18px; /* Ajustado el tamaño del texto */
+    cursor: pointer;
+    background-color: #2ecc71; /* Cambiado a un tono verde */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Añadido un borde redondeado */
+}
+
+#reiniciar-button:hover {
+    background-color: #27ae60; /* Cambiado a un tono verde más oscuro al pasar el mouse */
+}

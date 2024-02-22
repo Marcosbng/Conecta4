@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c6c6df;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+    color: #333;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 80px);
+    gap: 10px;
+    background-color: #4ea0ec;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border: 1px solid #888;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+.rojo {
+    background-color: rgb(209, 43, 43);
+}
+
+.amarillo {
+    background-color: rgb(238, 238, 69);
+}
+
+.message {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.message.winner {
+    color: #4CAF50;
+    font-weight: bold;
+}
